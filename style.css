@@ -33,3 +33,36 @@ body {
     padding-left: 2em;/* espaçamento interno da esquerda*/
     align-self: center;/*alinhamento do item*/
 }
+
+.texto h2{
+    line-height: 2em;
+    margin-bottom: 1.5em;
+}
+
+.texto p{
+    line-height: 2em;
+    margin-bottom: 1.5em;
+}
+
+.imagem{
+    flex: 1; /*ocupa o espaço restante*/
+    text-align: center; /*centraliza a imagem horizontalmente*/
+    align-self: center;  /* alinhamento item */
+}
+
+.imagem IMG {
+    max-width: 100%; /*garante que a imagem não ultrapasse seu contêiner*/
+    height: auto; /* matém a proporção da imagem*/
+    border-radius: 8px; /* borda arredondada para a imagem */
+}
+
+/*media querypara tornar a seção responsiva*/
+@media (max-width: 800px) {
+    .secao{
+        flex-direction: column;   /*empilha os itens verticalmente em telas menores*/
+    }
+    .texto, .imagem {
+        padding: 10px;  /*espaçamento interno menor para telas menorres*/
+    }
+
+}
