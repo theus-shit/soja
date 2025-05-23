@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.descricao{
+    text-align: center;
+    margin-bottom: 2em;
+
+}
+
+.secao{
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 9px;
+    display: flex;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.texto{
+    flex: 1;/*ocupa espaço restante*/
+    padding-right: 20px;/*espaçamento direita para separar da imagem*/
+    padding-left: 2em;/* espaçamento interno da esquerda*/
+    align-self: center;/*alinhamento do item*/
+}
